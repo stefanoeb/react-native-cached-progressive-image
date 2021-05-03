@@ -1,4 +1,4 @@
-import React, { useRef, useState, ReactNode } from 'react';
+import React, { useRef, useState, ReactNode } from "react";
 import {
   View,
   Animated,
@@ -8,8 +8,8 @@ import {
   StyleProp,
   ImageSourcePropType,
   ImageStyle,
-} from 'react-native';
-import FastImage, { FastImageProps } from 'react-native-fast-image';
+} from "react-native";
+import FastImage, { FastImageProps } from "react-native-fast-image";
 
 export interface CachedImageWithProgressiveLoadProps extends FastImageProps {
   viewStyle?: StyleProp<ViewStyle>;
@@ -36,7 +36,7 @@ const CachedImageWithProgressiveLoad = ({
   resizeMode,
   thumbnailBlurRadius = 1,
   style,
-  fallbackSource = { uri: '' },
+  fallbackSource = { uri: "" },
   onError,
   children,
   ...otherProps
@@ -97,7 +97,8 @@ const CachedImageWithProgressiveLoad = ({
           ]}
           source={thumbnailSource}
           blurRadius={thumbnailBlurRadius}
-          resizeMode={resizeMode}>
+          resizeMode={resizeMode}
+        >
           {children}
         </AnimatedImage>
       ) : null}
@@ -107,7 +108,8 @@ const CachedImageWithProgressiveLoad = ({
         onError={hasError ? () => null : onImageLoadError}
         source={hasError ? (fallbackSource as typeof source) : source}
         style={[styles.imageStyle, { opacity: imageOpacity }, style]}
-        {...otherProps}>
+        {...otherProps}
+      >
         {children}
       </AnimatedFastImage>
     </View>
@@ -116,7 +118,7 @@ const CachedImageWithProgressiveLoad = ({
 
 const styles = StyleSheet.create({
   imageContainerStyle: {
-    overflow: 'hidden',
+    overflow: "hidden",
   },
   thumbnailImageStyle: {
     ...StyleSheet.absoluteFillObject,

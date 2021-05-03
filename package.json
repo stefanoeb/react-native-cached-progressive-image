@@ -1,4 +1,9 @@
 {
+  "name": "react-native-cached-progressive-image",
+  "description": "An image component that is cached based on the URL and has progressive thumbnail features",
+  "version": "1.0.0",
+  "author": "stefanoeb",
+  "bugs": "https://github.com/stefanoeb/react-native-cached-progressive-image/issues",
   "dependencies": {
     "react": "^17.0.2",
     "react-native": "^0.64.0",
@@ -6,5 +11,14 @@
   },
   "devDependencies": {
     "typescript": "^4.2.4"
-  }
+  },
+  "homepage": "https://github.com/stefanoeb/react-native-cached-progressive-image/",
+  "keywords": [
+    "react-native-fast-image",
+    "react-native-image",
+    "react"
+  ],
+  "license": "MIT",
+  "main": "./dist/",
+  "repository": "stefanoeb/react-native-cached-progressive-image"
 }
