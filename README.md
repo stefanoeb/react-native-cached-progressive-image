@@ -1,2 +1,2 @@
-# A cached, progressive <Image /> component
+# A cached, progressive Image component
 
