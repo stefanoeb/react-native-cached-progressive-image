@@ -1,1 +1,2 @@
-# react-native-cached-progressive-image
+# A cached, progressive <Image /> component
+
